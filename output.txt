@@ -1,0 +1,9 @@
+La cadena "&" es rechazada.
+La cadena "0" es rechazada.
+La cadena "11" es rechazada.
+La cadena "000" es rechazada.
+La cadena "100" es aceptada.
+La cadena "010101" es aceptada.
+La cadena "1111" es aceptada.
+La cadena "0000100" es aceptada.
+La cadena "0101010" es rechazada.
