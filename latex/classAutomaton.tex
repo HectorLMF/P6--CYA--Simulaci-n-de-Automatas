@@ -1,0 +1,82 @@
+\doxysection{Automaton Class Reference}
+\hypertarget{classAutomaton}{}\label{classAutomaton}\index{Automaton@{Automaton}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAutomaton_a01bb9423fd037a706b5bc49e6878b2c8}{Automaton}} (const std\+::vector$<$ char $>$ \&alphabet, int num\+\_\+states, int start\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classAutomaton}{Automaton}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAutomaton_a58272ae14e8f83f86fa79aaae7c77153}{add\+\_\+state}} (int id, bool is\+\_\+final, const std\+::vector$<$ std\+::pair$<$ char, int $>$ $>$ \&transitions)
+\begin{DoxyCompactList}\small\item\em Añade un estado al autómata. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classAutomaton_a8c5ae610bbe0d10f3026d6b8b5137508}{accepts}} (const std\+::string \&input) const
+\begin{DoxyCompactList}\small\item\em Verifica si el autómata acepta una cadena dada. \end{DoxyCompactList}\item 
+\Hypertarget{classAutomaton_a32931852679a09c5549e897e035e4ffc}\label{classAutomaton_a32931852679a09c5549e897e035e4ffc} 
+void {\bfseries display\+\_\+info} () const
+\begin{DoxyCompactList}\small\item\em Muestra la información del autómata. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAutomaton_a01bb9423fd037a706b5bc49e6878b2c8}\label{classAutomaton_a01bb9423fd037a706b5bc49e6878b2c8} 
+\index{Automaton@{Automaton}!Automaton@{Automaton}}
+\index{Automaton@{Automaton}!Automaton@{Automaton}}
+\doxysubsubsection{\texorpdfstring{Automaton()}{Automaton()}}
+{\footnotesize\ttfamily Automaton\+::\+Automaton (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ char $>$ \&}]{alphabet,  }\item[{int}]{num\+\_\+states,  }\item[{int}]{start\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classAutomaton}{Automaton}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alphabet} & Alfabeto del autómata. \\
+\hline
+{\em num\+\_\+states} & Número total de estados del autómata. \\
+\hline
+{\em start\+\_\+state} & Estado de arranque del autómata. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAutomaton_a8c5ae610bbe0d10f3026d6b8b5137508}\label{classAutomaton_a8c5ae610bbe0d10f3026d6b8b5137508} 
+\index{Automaton@{Automaton}!accepts@{accepts}}
+\index{accepts@{accepts}!Automaton@{Automaton}}
+\doxysubsubsection{\texorpdfstring{accepts()}{accepts()}}
+{\footnotesize\ttfamily bool Automaton\+::accepts (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption}) const}
+
+
+
+Verifica si el autómata acepta una cadena dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & La cadena de entrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la cadena es aceptada, false en caso contrario. 
+\end{DoxyReturn}
+\Hypertarget{classAutomaton_a58272ae14e8f83f86fa79aaae7c77153}\label{classAutomaton_a58272ae14e8f83f86fa79aaae7c77153} 
+\index{Automaton@{Automaton}!add\_state@{add\_state}}
+\index{add\_state@{add\_state}!Automaton@{Automaton}}
+\doxysubsubsection{\texorpdfstring{add\_state()}{add\_state()}}
+{\footnotesize\ttfamily void Automaton\+::add\+\_\+state (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{bool}]{is\+\_\+final,  }\item[{const std\+::vector$<$ std\+::pair$<$ char, int $>$ $>$ \&}]{transitions }\end{DoxyParamCaption})}
+
+
+
+Añade un estado al autómata. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador del estado. \\
+\hline
+{\em is\+\_\+final} & Indica si es un estado de aceptación. \\
+\hline
+{\em transitions} & Transiciones del estado. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Automaton.\+h\item 
+Automaton.\+cpp\end{DoxyCompactItemize}

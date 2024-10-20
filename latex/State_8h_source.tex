@@ -1,0 +1,30 @@
+\doxysection{State.\+h}
+\hypertarget{State_8h_source}{}\label{State_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STATE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STATE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classState}{State}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ Constructor\ por\ defecto}}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classState}{State}}()\ :\ is\_final(\textcolor{keyword}{false})\ \{\}}
+\DoxyCodeLine{00012\ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Constructor\ que\ recibe\ si\ el\ estado\ es\ final\ o\ no}}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classState}{State}}(\textcolor{keywordtype}{bool}\ is\_final);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classState_af5be10ab4de81fd98599c35d013e8f3c}{add\_transition}}(\textcolor{keywordtype}{char}\ input,\ \textcolor{keywordtype}{int}\ next\_state);}
+\DoxyCodeLine{00017\ \ \ \ \ std::set<int>\ \mbox{\hyperlink{classState_a935b0205ff3414e2694989384ff4428d}{get\_transitions}}(\textcolor{keywordtype}{char}\ input)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classState_af0b5747ede3ecdb90495aea3699c3e00}{is\_final\_state}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_final;}
+\DoxyCodeLine{00022\ \ \ \ \ std::map<char,\ std::set<int>>\ transitions;}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STATE\_H}}
+
+\end{DoxyCode}

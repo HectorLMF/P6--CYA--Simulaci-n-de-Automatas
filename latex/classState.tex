@@ -1,0 +1,88 @@
+\doxysection{State Class Reference}
+\hypertarget{classState}{}\label{classState}\index{State@{State}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classState_a228bde6ffd239c81f3815aa28ed1481e}{State}} (bool is\+\_\+final)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classState}{State}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classState_af5be10ab4de81fd98599c35d013e8f3c}{add\+\_\+transition}} (char input, int next\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Añade una transición desde este estado a otro. \end{DoxyCompactList}\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{classState_a935b0205ff3414e2694989384ff4428d}{get\+\_\+transitions}} (char input) const
+\begin{DoxyCompactList}\small\item\em Obtiene el conjunto de estados a los que se puede transicionar con un símbolo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classState_af0b5747ede3ecdb90495aea3699c3e00}{is\+\_\+final\+\_\+state}} () const
+\begin{DoxyCompactList}\small\item\em Indica si el estado es un estado final. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classState_a228bde6ffd239c81f3815aa28ed1481e}\label{classState_a228bde6ffd239c81f3815aa28ed1481e} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+final }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classState}{State}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+\_\+final} & Indica si el estado es final. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classState_af5be10ab4de81fd98599c35d013e8f3c}\label{classState_af5be10ab4de81fd98599c35d013e8f3c} 
+\index{State@{State}!add\_transition@{add\_transition}}
+\index{add\_transition@{add\_transition}!State@{State}}
+\doxysubsubsection{\texorpdfstring{add\_transition()}{add\_transition()}}
+{\footnotesize\ttfamily void State\+::add\+\_\+transition (\begin{DoxyParamCaption}\item[{char}]{input,  }\item[{int}]{next\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Añade una transición desde este estado a otro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & El símbolo de entrada para la transición. \\
+\hline
+{\em next\+\_\+state} & El estado al que se transiciona. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classState_a935b0205ff3414e2694989384ff4428d}\label{classState_a935b0205ff3414e2694989384ff4428d} 
+\index{State@{State}!get\_transitions@{get\_transitions}}
+\index{get\_transitions@{get\_transitions}!State@{State}}
+\doxysubsubsection{\texorpdfstring{get\_transitions()}{get\_transitions()}}
+{\footnotesize\ttfamily std\+::set$<$ int $>$ State\+::get\+\_\+transitions (\begin{DoxyParamCaption}\item[{char}]{input }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el conjunto de estados a los que se puede transicionar con un símbolo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & El símbolo de entrada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un conjunto de estados destino. 
+\end{DoxyReturn}
+\Hypertarget{classState_af0b5747ede3ecdb90495aea3699c3e00}\label{classState_af0b5747ede3ecdb90495aea3699c3e00} 
+\index{State@{State}!is\_final\_state@{is\_final\_state}}
+\index{is\_final\_state@{is\_final\_state}!State@{State}}
+\doxysubsubsection{\texorpdfstring{is\_final\_state()}{is\_final\_state()}}
+{\footnotesize\ttfamily bool State\+::is\+\_\+final\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Indica si el estado es un estado final. 
+
+\begin{DoxyReturn}{Returns}
+true si es un estado final, false en caso contrario. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+State.\+h\item 
+State.\+cpp\end{DoxyCompactItemize}
